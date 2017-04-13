@@ -1,7 +1,7 @@
 (function () {
     var _descending = true;
     var _data = [];
-    
+
     function getData() {
         var url = "./data.json";
         var request = new XMLHttpRequest();
@@ -128,4 +128,42 @@
             }
         })
     }
+
+
+
+    //js for tooltip
+
+        document.addEventListener("mouseover", function (e) {
+            var tar = e.target;
+            var tempLeft = e.clientX;
+            var tempTop = e.clientY;
+            console.log(e.clientX);
+
+            document.getElementsByClassName("template-out")[0].style.top = tempTop + 'px';
+            document.getElementsByClassName("template-out")[0].style.left = tempLeft + 'px';
+            if (tar.nodeName !== "HTML" &&
+                tar.nodeName !== "BODY") {
+                document.getElementsByClassName("template-out")[0].style.display = "block";
+                document.getElementsByClassName("template-out")[0].style.position = "fixed";
+            }
+            if (tar.nodeName !== "HTML" &&
+                tar.className !== "template-out" &&
+                tar.className !== "template-in" &&
+                tar.className !== "template-title" &&
+                tar.className !== "template-content" &&
+                tar.className !== "template-okbtn") {
+                document.getElementsByClassName("template-title")[0].innerHTML = 'Title: "' + tar.nodeName + '"';
+                document.getElementsByClassName("template-content")[0].innerHTML = 'Content: "' + tar.innerText  + '"';
+            }
+
+
+        })
+        document.addEventListener("mouseout", function() {
+            document.getElementsByClassName("template-out")[0].style.display = "none";
+        })
+        function close() {
+            document.getElementsByClassName("template-out")[0].style.display = "none";
+        }
+
+
 })();

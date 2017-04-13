@@ -156,3 +156,33 @@ br {
 .icons {
     margin-bottom: 5px;
 }
+
+/*css for template*/
+.template-out {
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+
+.template-in {
+    display: block;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 2px 2px 10px 3px gray;
+}
+
+.template-title {
+    top: 40px;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.template-content {
+    margin-left: 20px;
+    font-size: 1rem;
+}
+.template-okbtn {
+    margin-left: 20px;
+}
