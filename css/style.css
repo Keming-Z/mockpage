@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1280px;
+    position: relative;
+}
+
+.sidebar-wrapper {
+    position: fixed;
+    width: 128px;
+    background-color: black;
+    height: 100%;
+}
+
+.devbox img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.explore,
+.folder,
+.upload {
+    height: 70px;
+    background-color: rgb(40, 41, 42);
+    position: relative;
+    margin-top: 5px;
+}
+
+.explore {
+    border-right: 5px solid #4e9ad3;
+}
+
+.folder {
+    border-right: 5px solid #f631ef;
+}
+
+.upload {
+    border-right: 5px solid #ff9400;
+}
+
+.icon-wrapper {
+    position: absolute;
+    color: #e4e4e4;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+}
+
+.material-icons {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.icon-wrapper span {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(0, -50%);
+}
+
+.content-wrapper {
+    position: relative;
+    margin-left: 128px;
+    color: rgb(65, 65, 65);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.topbanner {
+    position: relative;
+    height: 150px;
+    background: url("../images/top_banner.jpg") no-repeat center;
+}
+
+.banner-title {
+    position: absolute;
+    margin-left: 20px;
+    bottom: 0px;
+    font-weight: bold;
+}
+
+.small-title {
+    font-size: 18px;
+}
+
+.large-title {
+    font-size: 60px;
+}
+
+.sort {
+    position: absolute;
+    margin-top: 15px;
+    right: 40px;
+    cursor: pointer;
+}
+
+#content {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.row {
+    position: relative;
+    display: flex;
+}
+
+.box {
+    margin: 10px;
+    border: 1px solid rgb(65, 65, 65);
+    width: 32%;
+}
+
+.box img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.info {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.fileName {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+
+br {
+    color: rgb(65, 65, 65);
+}
+
+.description {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.icons {
+    margin-bottom: 5px;
+}
